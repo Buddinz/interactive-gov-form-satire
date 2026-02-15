@@ -1,0 +1,346 @@
+<!--
+  GITHUB PAGES DEPLOYMENT INSTRUCTIONS:
+  1. Push this project to a GitHub repository
+  2. Go to Settings > Pages
+  3. Select "Deploy from a branch" and choose the "main" branch
+  4. GitHub will deploy from the root folder; the site will be live at https://your-username.github.io/repository-name
+  5. All three files (index.html, styles.css, script.js) should be in the root directory
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMA-2026 Application Form</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&family=Source+Serif+4:ital@0;1&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Decorative watermark seal -->
+        <div class="watermark-seal"></div>
+        
+        <!-- Header -->
+        <header class="form-header">
+            <div class="header-content">
+                <h1 class="department-title">United States Department of Domestic Affairs</h1>
+                <h2 class="department-subtitle">Division of Strategic Reproductive Partnerships</h2>
+                <div class="form-metadata">
+                    <span>Form ID: BMA-2026 (Rev. 2.3)</span>
+                    <span class="dot-separator">•</span>
+                    <span>Classification: Mildly Confidential</span>
+                </div>
+            </div>
+            <div class="gold-accent-line"></div>
+        </header>
+        
+        <!-- Disclaimer Banner -->
+        <div class="disclaimer-banner">
+            ⚠️ THIS IS SATIRE. DO NOT SUBMIT REAL PERSONAL DATA. ⚠️
+        </div>
+        
+        <!-- Progress Bar -->
+        <div class="progress-container">
+            <div class="progress-label">Operational Readiness</div>
+            <div class="progress-bar-wrapper">
+                <div class="progress-bar-fill"></div>
+            </div>
+        </div>
+        
+        <!-- Main Form -->
+        <form id="applicationForm" class="form-container">
+            <!-- SECTION I: Personal Identification -->
+            <section class="form-section">
+                <h3 class="section-title">SECTION I — Personal Identification</h3>
+                
+                <div class="form-group">
+                    <label for="fullName">Full Legal Name</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="age">Age <span class="helper-text">(Eligible cohort only.)</span></label>
+                    <select id="age" name="age" required>
+                        <option value="">— Select Age —</option>
+                        <option value="43">43</option>
+                        <option value="44">44</option>
+                        <option value="45">45</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="race">Race / Ethnicity (Optional)</label>
+                    <select id="race" name="race">
+                        <option value="">— Select —</option>
+                        <option value="white">White</option>
+                        <option value="black">Black or African American</option>
+                        <option value="hispanic">Hispanic or Latino</option>
+                        <option value="asian">Asian</option>
+                        <option value="native">Native American or Alaska Native</option>
+                        <option value="hawaiian">Native Hawaiian or Pacific Islander</option>
+                        <option value="multiracial">Two or More Races</option>
+                        <option value="other">Other</option>
+                        <option value="prefer-not-federal">Prefer Not to Disclose to Federal Authorities</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="branchOfService">Branch of Service (Optional)</label>
+                    <select id="branchOfService" name="branchOfService">
+                        <option value="">— Select —</option>
+                        <option value="army">Army</option>
+                        <option value="navy">Navy</option>
+                        <option value="air-force">Air Force</option>
+                        <option value="marines">Marines</option>
+                        <option value="space-force">Space Force</option>
+                        <option value="coast-guard">Coast Guard</option>
+                        <option value="civilian-contractor">Civilian Contractor</option>
+                        <option value="classified">Classified</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="rankStatus">Rank / Status</label>
+                    <select id="rankStatus" name="rankStatus" required>
+                        <option value="">— Select Rank/Status —</option>
+                        <option value="e4-mafia">E-4 Mafia</option>
+                        <option value="officer-energy">Officer Energy</option>
+                        <option value="veteran">Veteran</option>
+                        <option value="active-duty">Active Duty</option>
+                        <option value="reserves">Reserves</option>
+                        <option value="dependapotamus">Dependapotamus (joke)</option>
+                        <option value="prefer-not-say">Prefer Not to Say</option>
+                    </select>
+                </div>
+            </section>
+            
+            <!-- SECTION II: Psychological Assessment -->
+            <section class="form-section">
+                <h3 class="section-title">SECTION II — Psychological Assessment</h3>
+                
+                <div class="form-group slider-group">
+                    <label for="emotionalStability">Emotional Stability (1–10)</label>
+                    <div class="slider-container">
+                        <input type="range" id="emotionalStability" name="emotionalStability" min="1" max="10" value="5">
+                        <span class="slider-value" id="emotionalStabilityValue">5</span>
+                    </div>
+                    <p class="feedback-text" id="emotionalStabilityFeedback">Operationally manageable.</p>
+                </div>
+                
+                <div class="form-group slider-group">
+                    <label for="horninessLevel">Horniness Level (1–10)</label>
+                    <div class="slider-container">
+                        <input type="range" id="horninessLevel" name="horninessLevel" min="1" max="10" value="5">
+                        <span class="slider-value" id="horniness LevelValue">5</span>
+                    </div>
+                    <p class="feedback-text" id="horninessFeedback">Standard operating levels.</p>
+                </div>
+            </section>
+            
+            <!-- SECTION III: Conflict Resolution Protocol -->
+            <section class="form-section">
+                <h3 class="section-title">SECTION III — Conflict Resolution Protocol</h3>
+                <p class="section-prompt">When encountering interpersonal tension, you typically:</p>
+                
+                <div class="radio-group">
+                    <label class="radio-label">
+                        <input type="radio" name="conflictResolution" value="communicate-directly">
+                        <span>Communicate directly</span>
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="conflictResolution" value="silent-48-72">
+                        <span>Go silent for 48–72 hours</span>
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="conflictResolution" value="cry-strategically">
+                        <span>Cry strategically</span>
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="conflictResolution" value="lift-heavy">
+                        <span>Lift heavy things</span>
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="conflictResolution" value="unrelated-argument">
+                        <span>Start an argument about something unrelated</span>
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="conflictResolution" value="its-fine">
+                        <span>Say "It's fine." (It is not fine.)</span>
+                    </label>
+                </div>
+            </section>
+            
+            <!-- SECTION IV: Tactical Compatibility Matrix -->
+            <section class="form-section">
+                <h3 class="section-title">SECTION IV — Tactical Compatibility Matrix</h3>
+                
+                <div class="form-group">
+                    <label for="intent">Intent</label>
+                    <select id="intent" name="intent" required>
+                        <option value="">— Select Intent —</option>
+                        <option value="long-term-mission">Long-term mission</option>
+                        <option value="temporary-deployment">Temporary deployment</option>
+                        <option value="situationship-benefits">Situationship with benefits package</option>
+                        <option value="just-vibes">We just seeing the vibes</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="fitnessLevel">Fitness Level</label>
+                    <select id="fitnessLevel" name="fitnessLevel" required>
+                        <option value="">— Select Fitness Level —</option>
+                        <option value="gym-5x">Gym 5x/week</option>
+                        <option value="active-duty-ready">Active duty ready</option>
+                        <option value="civilian-cardio">Civilian cardio</option>
+                        <option value="spiritual-fitness">Spiritual fitness only</option>
+                    </select>
+                </div>
+            </section>
+            
+            <!-- SECTION V: Background Check -->
+            <section class="form-section">
+                <h3 class="section-title">SECTION V — Background Check (Comical)</h3>
+                <p class="section-prompt">Select all that apply:</p>
+                
+                <div class="checkbox-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="backgroundChecks" value="parallel-park">
+                        <span>Can parallel park under pressure</span>
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="backgroundChecks" value="yelled-fine-crying">
+                        <span>Has yelled "IT'S FINE" while crying</span>
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="backgroundChecks" value="beyonce-lyric">
+                        <span>Knows at least one Beyoncé lyric by heart</span>
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="backgroundChecks" value="webmd-diagnosed">
+                        <span>Has used WebMD and diagnosed self incorrectly</span>
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="backgroundChecks" value="true-crime-notes">
+                        <span>Has watched a true crime documentary and taken notes</span>
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="backgroundChecks" value="affected-homeostasis">
+                        <span>Believes in Affected Homeostasis</span>
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="backgroundChecks" value="keeps-receipts">
+                        <span>Keeps receipts (for audit readiness)</span>
+                    </label>
+                </div>
+            </section>
+            
+            <!-- SECTION VI: Tactical Position Preference -->
+            <section class="form-section">
+                <h3 class="section-title">SECTION VI — Tactical Position Preference</h3>
+                <p class="section-prompt">Preferred Strategic Positioning During Joint Operations:</p>
+                
+                <div class="radio-group">
+                    <label class="radio-label">
+                        <input type="radio" name="tacticalPosition" value="face-to-face">
+                        <span>Face-to-face negotiation</span>
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="tacticalPosition" value="side-by-side">
+                        <span>Side-by-side alliance</span>
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="tacticalPosition" value="overwatch">
+                        <span>Overwatch stance</span>
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="tacticalPosition" value="doggy">
+                        <span>Doggy</span>
+                    </label>
+                </div>
+            </section>
+            
+            <!-- Certification Checkbox -->
+            <section class="form-section">
+                <div class="certification-check">
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="certification" id="certification" required>
+                        <span>I understand this form does not guarantee deployment.</span>
+                    </label>
+                </div>
+            </section>
+            
+            <!-- Submit Button -->
+            <div class="form-actions">
+                <button type="submit" class="btn btn-primary">Submit Application for Review</button>
+            </div>
+        </form>
+        
+        <!-- Results Screen (hidden by default) -->
+        <div id="resultsScreen" class="results-screen hidden">
+            <h2 class="results-title">Application Results</h2>
+            
+            <div class="results-content">
+                <div class="compatibility-index">
+                    <div class="index-label">Compatibility Index:</div>
+                    <div class="index-value" id="compatibilityIndex">—</div>
+                </div>
+                
+                <div class="status-line">
+                    <span id="statusText">Processing...</span>
+                </div>
+                
+                <div class="results-stamp" id="resultsStamp">
+                    <span>CLASSIFIED</span>
+                </div>
+            </div>
+            
+            <div class="results-actions">
+                <button type="button" class="btn btn-secondary" id="resetBtn">Reset Form</button>
+            </div>
+        </div>
+        
+        <!-- Processing Panel (hidden by default) -->
+        <div id="processingPanel" class="processing-panel hidden">
+            <h2>Processing Application</h2>
+            
+            <div class="processing-steps">
+                <div class="step">
+                    <div class="step-text">Running background check…</div>
+                    <div class="step-progress"></div>
+                </div>
+                <div class="step">
+                    <div class="step-text">Verifying operational readiness…</div>
+                    <div class="step-progress"></div>
+                </div>
+                <div class="step">
+                    <div class="step-text">Stamping documents…</div>
+                    <div class="step-progress"></div>
+                </div>
+            </div>
+            
+            <div class="fake-progress-bar">
+                <div class="fake-progress-fill" id="fakeProgressFill"></div>
+            </div>
+            <span class="progress-percentage" id="progressPercentage">0%</span>
+        </div>
+        
+        <!-- Stamps -->
+        <div class="stamp stamp-review" aria-hidden="true">UNDER REVIEW</div>
+        <div class="stamp stamp-ready" aria-hidden="true">COMBAT READY</div>
+        <div class="stamp stamp-psych" aria-hidden="true">PSYCH EVALUATION PENDING</div>
+        
+        <!-- Footer -->
+        <footer class="form-footer">
+            <div class="barcode" aria-hidden="true"></div>
+            <p class="footer-text">Form page 1 of 1</p>
+            <p class="fine-print">False statements punishable under the Code of Domestic Conduct.</p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
